@@ -1,0 +1,27 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# IntelliJ
+.idea/
+*.iws
+*.ipr
+*.project
+*.classpath
+
+# Maven
+.mvn/
+!mvnw
+!mvnw.cmd
+
+# Logs
+logs/
+*.log
+
+# OS Files
+Thumbs.db
+.DS_Store
