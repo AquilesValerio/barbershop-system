@@ -1,9 +1,7 @@
 package com.barbershop.barbershop.api.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 import java.util.Objects;
 
@@ -14,6 +12,7 @@ public class Client {
     private Long id;
     private String name;
     private String email;
+    @Column(unique = true)
     private String phone;
 
     public Client() {
